@@ -2,9 +2,9 @@
 
   "manifest_version": 2,
   "name": "MicrosoftDocsLanguageChanger",
-  "version": "1.1",
+  "version": "1.2",
 
-  "description": "Changes microsoft docs language to english",
+  "description": "Changes microsoft docs/learn language to english",
 
   "icons": {
     "48": "icons/changer.svg",

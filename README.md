@@ -1,5 +1,5 @@
 # MicrosoftDocsLanguageChanger
-Firefox extension that changes microsoft docs sites language to english.
+Firefox extension that changes microsoft docs/learn sites language to english.
 
 [Add-ons store](https://addons.mozilla.org/en-US/firefox/addon/microsoftdocslanguagechanger/)
 

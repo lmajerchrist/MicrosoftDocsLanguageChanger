@@ -7,9 +7,7 @@ function changeDocsLanguage(requestDetails) {
     // Language code is duplicated if language has no dialect (for example pl-pl)
     const extractLanguageCodeRegex = /(^https?:\/\/learn\.microsoft\.com\/)(\w{2}-\w{2})([\w\W]*)/;
 
-    const modifiedUrl = requestDetails
-        .url
-        .replace(extractLanguageCodeRegex, languageReplacer);
+    const modifiedUrl = requestDetails.url.replace(extractLanguageCodeRegex, languageReplacer);
 
     if (requestDetails.url === modifiedUrl) {
         return;
@@ -23,7 +21,9 @@ function changeDocsLanguage(requestDetails) {
 browser.webRequest.onBeforeRequest.addListener(
     changeDocsLanguage,
     {
-        urls: ["*://learn.microsoft.com/*-*/*"],
+        urls: [
+        "*://learn.microsoft.com/*-*/*"
+        ],
         types: ["main_frame"]
     },
     ["blocking"]

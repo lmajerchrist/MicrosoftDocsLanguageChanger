@@ -1,23 +1,27 @@
 {
-
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "MicrosoftDocsLanguageChanger",
   "version": "1.2",
-
-  "description": "Changes microsoft docs/learn language to english",
-
+  "description": "Changes microsoft docs language to english",
   "icons": {
     "48": "icons/changer.svg",
     "96": "icons/changer.svg"
   },
-  
   "permissions": [
     "webRequest",
-    "webRequestBlocking",
-    "*://docs.microsoft.com/*-*/*"
+    "webRequestBlocking"
   ],
-
+  "host_permissions": [
+    "*://learn.microsoft.com/*-*/*"
+  ],
   "background": {
-    "scripts": ["language-changer.js"]
+    "scripts": [
+      "language-changer.js"
+    ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{74f53a49-96c0-4afd-88c9-e7ee75922716}"
+    }
   }
 }
